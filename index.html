@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="shortcut icon" href="img/star.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="alldivs py-5">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="allInput">
+            <div class="headbtn d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-bookmark mx-3 "></i>
+                <h2>Bookmark your favorite sites</h2>
+                <i class="fa-solid fa-bookmark mx-3"></i>
+            </div>
+            <div class="inputsec d-flex flex-column justify-content-start align-items-start">
+                <label for="siteNameInput" class="my-2 fw-bold"><i
+                        class="fa-solid fa-book-bookmark bg-transparent fs-6"></i> Site Name:
+                </label>
+                <input type="text" placeholder="Bookmark Name" class="form-control mb-3" id="siteNameInput">
+                <label for="siteURLInput" class="my-2 fw-bold"><i class="fa-solid fa-link bg-transparent fs-6"></i>
+                    Site URL:
+                </label>
+                <input type="text" placeholder="Bookmark Name" class="form-control mb-3" id="siteURLInput">
+                <button type="submit" onclick="submit()">Submit</button>
+            </div>
+
+        </div>
+        <table class="table py-5 w- m-auto">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
