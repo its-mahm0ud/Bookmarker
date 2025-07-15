@@ -23,7 +23,7 @@ function disPlaySite() {
         <tr>
                     <td>${i}</td>
                     <td>${arrInput[i].name}</td>
-                    <td><button id="visitInput" type="button" class="btn btn-success" onclick="visitInput()"><i class="fa-solid fa-eye"></i>
+                    <td><button id="visitInput" type="button" class="btn btn-success" onclick="visitInput('${arrInput[i].url}')"><i class="fa-solid fa-eye"></i>
                             Visit</button>
                     </td>
                     <td><button id="deleteInput" type="button" class="btn btn-danger"onclick="checkDelete(${i})"><i class="fa-solid fa-trash"></i>
@@ -45,9 +45,12 @@ function deleteInput(siteIndex) {
     localStorage.setItem("infoSite", JSON.stringify(arrInput));
 
 }
-function visitInput() {
-    siteURLInput = document.getElementById("siteURLInput").value;
-    window.open(siteURLInput, "_blank");
+function visitInput(url) {
+    if (!url.startsWith("http://")&& !url.startsWith("https://")){
+        url="https://" + url;
+    }
+
+    window.open(url, "_blank");
 
 }
 function checkDelete(siteIndex) {
